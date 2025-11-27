@@ -61,7 +61,7 @@ export default function Home() {
                         The AI-Powered Marketplace for Pre-Owned Tech
                     </h1>
                     <p className="text-lg text-foreground/70 text-balance max-w-2xl mx-auto">
-                        Connecting Europe's fragmented refurbished hardware market. Starting in Italy.
+                        Connecting Europe&apos;s fragmented refurbished hardware market. Starting in Italy.
                     </p>
 
                     {/* Search Demo */}
@@ -272,7 +272,7 @@ export default function Home() {
                         <span className="text-sm font-medium text-accent">Pre-Seed · SAFE</span>
                     </div>
                     <h3 className="text-lg font-semibold">
-                        We're raising our pre-seed round to launch in Italy and expand across Europe
+                        We&apos;re raising our pre-seed round to launch in Italy and expand across Europe
                     </h3>
                 </div>
             </section>
@@ -283,7 +283,7 @@ export default function Home() {
                     <div>
                         <h2 className="text-3xl font-bold mb-2">Interested in ReBoot Market?</h2>
                         <p className="text-foreground/60">
-                            Whether you're an investor, potential partner, or just curious — let's talk
+                            Whether you&apos;re an investor, potential partner, or just curious — let&apos;s talk
                         </p>
                     </div>
 
@@ -314,7 +314,7 @@ export default function Home() {
                         >
                             {submitted ? "Message sent!" : "Get in Touch"}
                         </Button>
-                        <p className="text-xs text-foreground/50">We'll reach out within 24 hours</p>
+                        <p className="text-xs text-foreground/50">We&apos;ll reach out within 24 hours</p>
                     </form>
                 </div>
             </section>
