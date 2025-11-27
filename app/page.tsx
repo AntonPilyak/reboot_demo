@@ -10,15 +10,34 @@ import { ArrowRight, RotateCw, Leaf, TrendingUp, Zap, Search, Puzzle, Lightbulb,
 export default function Home() {
     const [email, setEmail] = useState("")
     const [userType, setUserType] = useState("Investor")
-    const [submitted, setSubmitted] = useState(false)
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        setSubmitted(true)
-        setTimeout(() => {
+        setStatus("loading")
+
+        try {
+            await fetch("https://script.google.com/macros/s/AKfycbwwoTP1-FFDcHFu4-qiJqRMM6JMj9p74M62OhlEOb2bgYnNO4YPhk9yH39UpLKZxnU5/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: email,
+                    type: userType,
+                }),
+            })
+
+            setStatus("success")
             setEmail("")
-            setSubmitted(false)
-        }, 3000)
+
+            // Сброс через 3 секунды
+            setTimeout(() => setStatus("idle"), 3000)
+        } catch {
+            setStatus("error")
+            setTimeout(() => setStatus("idle"), 3000)
+        }
     }
 
     return (
@@ -310,9 +329,12 @@ export default function Home() {
                         <Button
                             type="submit"
                             className="w-full rounded-md bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
-                            disabled={submitted}
+                            disabled={status === "loading"}
                         >
-                            {submitted ? "Message sent!" : "Get in Touch"}
+                            {status === "loading" && "Sending..."}
+                            {status === "success" && "Message sent!"}
+                            {status === "error" && "Error, try again"}
+                            {status === "idle" && "Get in Touch"}
                         </Button>
                         <p className="text-xs text-foreground/50">We&apos;ll reach out within 24 hours</p>
                     </form>
