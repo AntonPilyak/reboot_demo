@@ -6,14 +6,22 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRight, RotateCw, Leaf, TrendingUp, Zap, Search, Puzzle, Lightbulb, BarChart as Chart } from "lucide-react"
+import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Home() {
     const [email, setEmail] = useState("")
     const [userType, setUserType] = useState("Investor")
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null)
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
+
+        if (!captchaToken) {
+            alert("Please confirm you're not a robot")
+            return
+        }
+
         setStatus("loading")
 
         try {
@@ -325,6 +333,13 @@ export default function Home() {
                                 <option>Hardware Seller/Partner</option>
                                 <option>Other</option>
                             </select>
+                        </div>
+                        <div className="flex justify-center">
+                            <ReCAPTCHA
+                                sitekey="6LeIMRosAAAAALzkTlTCPy5AYPYeCWoKiiX2V1rM"
+                                onChange={(token) => setCaptchaToken(token)}
+                                onExpired={() => setCaptchaToken(null)}
+                            />
                         </div>
                         <Button
                             type="submit"
