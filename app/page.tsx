@@ -85,9 +85,11 @@ export default function Home() {
                                 className="rounded-md border-border bg-card text-foreground placeholder:text-foreground/50"
                                 readOnly
                             />
-                            <Button className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 px-6">
-                                <ArrowRight className="w-4 h-4" />
-                            </Button>
+                            <a href="#contact">
+                                <Button className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 text-sm">
+                                    Get in Touch
+                                </Button>
+                            </a>
                         </div>
                         <p className="text-sm text-foreground/60">See how our AI-powered semantic search works</p>
                     </div>
