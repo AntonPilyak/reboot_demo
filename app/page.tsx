@@ -60,7 +60,10 @@ export default function Home() {
                             </div>
                             <span className="text-lg font-semibold">ReBoot Market</span>
                         </div>
-                        <Button className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 text-sm">
+                        <Button
+                            className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 text-sm"
+                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                        >
                             Get in Touch
                         </Button>
                     </div>
