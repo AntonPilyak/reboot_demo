@@ -60,20 +60,6 @@ export default function Home() {
                             </div>
                             <span className="text-lg font-semibold">ReBoot Market</span>
                         </div>
-                        <nav className="hidden md:flex items-center gap-8">
-                            <a href="#vision" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                                Vision
-                            </a>
-                            <a href="#why-now" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                                Why Now
-                            </a>
-                            <a href="#demo" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                                Demo
-                            </a>
-                            <a href="#contact" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-                                Contact
-                            </a>
-                        </nav>
                         <Button className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 text-sm">
                             Get in Touch
                         </Button>
@@ -367,17 +353,6 @@ export default function Home() {
                             <span className="font-semibold">ReBoot Market</span>
                         </div>
                         <div className="text-sm text-foreground/60">Made with ♻️ for a sustainable future</div>
-                        <div className="flex gap-6 justify-end md:justify-start text-sm">
-                            <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
-                                Privacy
-                            </a>
-                            <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
-                                LinkedIn
-                            </a>
-                            <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">
-                                Email
-                            </a>
-                        </div>
                     </div>
                     <div className="pt-8 border-t border-border text-center text-sm text-foreground/50">
                         © 2025 ReBoot Market. All rights reserved.
