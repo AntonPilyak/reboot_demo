@@ -41,15 +41,3 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
 CMD ["node", "server.js"]
-```
-
-### Шаг 3. Создай .dockerignore
-
-В корне проекта создай файл `.dockerignore`:
-```
-node_modules
-.next
-.git
-.gitignore
-*.md
-.env*.local
