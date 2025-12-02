@@ -70,7 +70,7 @@ export default function Home() {
             </header>
 
             {/* Hero Section */}
-            <section id="demo" className="px-4 sm:px-6 lg:px-8 py-20 sm:py-32 max-w-4xl mx-auto">
+            <section id="demo" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 max-w-4xl mx-auto">
                 <div className="text-center space-y-8">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance leading-tight text-foreground">
                         The AI-Powered Marketplace for Pre-Owned Tech
@@ -80,7 +80,7 @@ export default function Home() {
                     </p>
 
                     {/* AI Search Feature */}
-                    <div className="mt-12 flex justify-center max-w-2xl mx-auto">
+                    <div className="mt-8 flex justify-center max-w-2xl mx-auto">
                         <div className="flex items-center justify-center gap-3">
                             <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -94,7 +94,7 @@ export default function Home() {
             </section>
 
             {/* Problem/Solution Section */}
-            <section id="vision" className="px-4 sm:px-6 lg:px-8 py-20 max-w-4xl mx-auto">
+            <section id="vision" className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Problem */}
                     <div className="space-y-6">
@@ -160,8 +160,8 @@ export default function Home() {
             </section>
 
             {/* Why Now Section */}
-            <section id="why-now" className="px-4 sm:px-6 lg:px-8 py-20 max-w-4xl mx-auto">
-                <div className="text-center mb-12">
+            <section id="why-now" className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
+                <div className="text-center mb-8">
                     <h2 className="text-3xl font-bold">Why Now</h2>
                     <p className="text-foreground/60 mt-2">Three reasons the time is right</p>
                 </div>
@@ -201,7 +201,7 @@ export default function Home() {
             </section>
 
             {/* AI Tech Advisor Section */}
-            <section className="px-4 sm:px-6 lg:px-8 py-20 max-w-4xl mx-auto">
+            <section className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Left side - Illustration */}
                     <div className="flex items-center justify-center">
@@ -301,7 +301,7 @@ export default function Home() {
             </section>
 
             {/* Traction Section */}
-            <section className="px-4 sm:px-6 lg:px-8 py-16 max-w-4xl mx-auto">
+            <section className="px-4 sm:px-6 lg:px-8 py-10 max-w-4xl mx-auto">
                 <div className="rounded-lg border border-border bg-card/30 p-8 text-center space-y-4">
                     <div className="inline-block px-3 py-1 rounded-full bg-accent/10 border border-accent/20">
                         <span className="text-sm font-medium text-accent">Pre-Seed · SAFE</span>
@@ -313,7 +313,7 @@ export default function Home() {
             </section>
 
             {/* CTA Section */}
-            <section id="contact" className="px-4 sm:px-6 lg:px-8 py-20 max-w-2xl mx-auto">
+            <section id="contact" className="px-4 sm:px-6 lg:px-8 py-12 max-w-2xl mx-auto">
                 <div className="text-center space-y-8">
                     <div>
                         <h2 className="text-3xl font-bold mb-2">Interested in ReBoot Market?</h2>
@@ -365,7 +365,7 @@ export default function Home() {
             </section>
 
             {/* Footer */}
-            <footer className="border-t border-border mt-20">
+            <footer className="border-t border-border mt-12">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     <div className="grid md:grid-cols-3 gap-8 mb-8">
                         <div className="flex items-center gap-2">
