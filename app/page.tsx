@@ -82,11 +82,16 @@ export default function Home() {
                     {/* Search Demo */}
                     <div className="mt-12 space-y-3 max-w-2xl mx-auto">
                         <div className="flex gap-2">
-                            <Input
-                                placeholder="Try demo: Search for 'ThinkPad T480' or 'RTX 3080'..."
-                                className="rounded-md border-border bg-card text-foreground placeholder:text-foreground/50"
-                                readOnly
-                            />
+                            <div className="relative flex-1">
+                                <Input
+                                    placeholder="Try demo: Search for 'ThinkPad T480' or 'RTX 3080'..."
+                                    className="rounded-md border-border bg-card text-foreground placeholder:text-foreground/50 opacity-75 cursor-not-allowed"
+                                    disabled
+                                />
+                                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs bg-accent text-accent-foreground px-2 py-1 rounded font-medium">
+                Demo Coming Soon
+            </span>
+                            </div>
                             <a href="#contact">
                                 <Button className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 text-sm">
                                     Get in Touch
@@ -154,7 +159,7 @@ export default function Home() {
                     >
                         <img
                             src="/reddit-feedback.png"
-                            alt="Reddit user discussing difficulty of buying used hardware in Italy"
+                            alt="Reddit discussion about buying used hardware in Italy"
                             className="w-full h-auto"
                         />
                     </a>
