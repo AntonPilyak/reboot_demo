@@ -199,40 +199,17 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* AI Tech Advisor Section */}
             <section className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Left side - Illustration */}
+                    {/* Left side - Image */}
                     <div className="flex items-center justify-center">
-                        <div className="w-full max-w-sm aspect-square rounded-lg border border-border bg-gradient-to-br from-accent/5 to-accent/10 flex items-center justify-center">
-                            {/* Minimal robot illustration */}
-                            <svg
-                                className="w-32 h-32 text-accent"
-                                viewBox="0 0 200 200"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                {/* Head */}
-                                <rect x="50" y="30" width="100" height="100" rx="8" stroke="currentColor" strokeWidth="2" />
-                                {/* Left eye */}
-                                <circle cx="80" cy="65" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
-                                {/* Right eye */}
-                                <circle cx="120" cy="65" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
-                                {/* Mouth */}
-                                <path
-                                    d="M 80 95 Q 100 105 120 95"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    fill="none"
-                                    strokeLinecap="round"
-                                />
-                                {/* Body */}
-                                <rect x="60" y="140" width="80" height="50" rx="4" stroke="currentColor" strokeWidth="2" />
-                                {/* Arms */}
-                                <rect x="30" y="155" width="30" height="12" rx="6" stroke="currentColor" strokeWidth="2" />
-                                <rect x="140" y="155" width="30" height="12" rx="6" stroke="currentColor" strokeWidth="2" />
-                            </svg>
+                        <div className="w-full max-w-sm rounded-xl overflow-hidden shadow-lg">
+                            <img
+                                src="/ai-brain.png"
+                                alt="AI Brain Technology"
+                                className="w-full h-auto"
+                            />
                         </div>
                     </div>
 
@@ -299,7 +276,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
             {/* Traction Section */}
             <section className="px-4 sm:px-6 lg:px-8 py-10 max-w-4xl mx-auto">
                 <div className="rounded-lg border border-border bg-card/30 p-8 text-center space-y-4">
