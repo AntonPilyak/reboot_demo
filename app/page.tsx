@@ -59,6 +59,23 @@ export default function Home() {
                             </div>
                             <span className="text-lg font-semibold">ReBoot Market</span>
                         </div>
+
+                        {/* Navigation Links */}
+                        <nav className="hidden md:flex items-center gap-6">
+                            <a href="#vision" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+                                Vision
+                            </a>
+                            <a href="#why-now" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+                                Why Now
+                            </a>
+                            <a href="#ai-advisor" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+                                AI Assistant
+                            </a>
+                            <a href="#contact" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+                                Contact
+                            </a>
+                        </nav>
+
                         <Button
                             className="rounded-md bg-accent text-accent-foreground hover:bg-accent/90 text-sm"
                             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -68,7 +85,6 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-
             {/* Hero Section */}
             <section id="demo" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 max-w-4xl mx-auto">
                 <div className="text-center space-y-8">
