@@ -184,7 +184,7 @@ export default function Home() {
 
                 <div className="grid md:grid-cols-3 gap-6">
                     {/* Card 1 */}
-                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-colors">
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
                         <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
                             <Leaf className="w-5 h-5 text-accent" />
                         </div>
@@ -195,7 +195,7 @@ export default function Home() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-colors">
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
                         <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
                             <TrendingUp className="w-5 h-5 text-accent" />
                         </div>
@@ -206,7 +206,7 @@ export default function Home() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-colors">
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
                         <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
                             <Zap className="w-5 h-5 text-accent" />
                         </div>
