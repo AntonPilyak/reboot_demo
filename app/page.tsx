@@ -178,8 +178,8 @@ export default function Home() {
             {/* Why Now Section */}
             <section id="why-now" className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold">Why Now</h2>
-                    <p className="text-foreground/60 mt-2">Three reasons the time is right</p>
+                    <h2 className="text-3xl font-bold">Why It's Going to Work</h2>
+                    <p className="text-foreground/60 mt-2">Three reasons we'll succeed</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6">
@@ -220,11 +220,11 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Left side - Image */}
                     <div className="flex items-center justify-center">
-                        <div className="w-full max-w-sm rounded-xl overflow-hidden shadow-lg">
+                        <div className="w-full h-full rounded-xl overflow-hidden shadow-lg">
                             <img
                                 src="/ai-brain.png"
                                 alt="AI Brain Technology"
-                                className="w-full h-auto"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
@@ -284,7 +284,6 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-
                         {/* Tagline */}
                         <p className="text-sm text-foreground/60 italic">
                             Like having a tech expert in your pocket — available 24/7
