@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ArrowRight, RotateCw, Leaf, TrendingUp, Zap, Search, Puzzle, Lightbulb, BarChart as Chart } from "lucide-react"
+import { ArrowRight, RotateCw, Leaf, TrendingUp, Zap, Search, Puzzle, Lightbulb, BarChart as Chart, Shield, Users, Target } from "lucide-react"
 import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Home() {
@@ -175,43 +175,75 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Why Now Section */}
-            <section id="why-now" className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
+            {/* Why It's Going to Work Section */}
+            <section id="why-now" className="px-4 sm:px-6 lg:px-8 py-12 max-w-5xl mx-auto">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl font-bold">Why It's Going to Work</h2>
-                    <p className="text-foreground/60 mt-2">Three reasons we'll succeed</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
-                    {/* Card 1 */}
-                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
-                        <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
-                            <Leaf className="w-5 h-5 text-accent" />
-                        </div>
-                        <h3 className="font-semibold mb-2">Sustainability</h3>
-                        <p className="text-sm text-foreground/70">
-                            EU regulations and growing consumer demand for circular economy
-                        </p>
-                    </div>
-
-                    {/* Card 2 */}
+                {/* First row - 3 cards */}
+                <div className="grid md:grid-cols-3 gap-6 mb-6">
                     <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
                         <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
                             <TrendingUp className="w-5 h-5 text-accent" />
                         </div>
-                        <h3 className="font-semibold mb-2">Market Gap</h3>
+                        <h3 className="font-semibold mb-2">Huge hardware flow in the EU</h3>
                         <p className="text-sm text-foreground/70">
-                            €40B+ European refurbished electronics market with no dominant player
+                            Millions of desktops, laptops and workstations enter the market every year — and every cycle creates new supply for resale or upgrades.
                         </p>
                     </div>
 
-                    {/* Card 3 */}
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
+                        <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+                            <Chart className="w-5 h-5 text-accent" />
+                        </div>
+                        <h3 className="font-semibold mb-2">Even a "shrinking" desktop market is still massive</h3>
+                        <p className="text-sm text-foreground/70">
+                            Absolute numbers remain huge, and every aging device becomes a candidate for selling or upgrading.
+                        </p>
+                    </div>
+
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
+                        <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+                            <Shield className="w-5 h-5 text-accent" />
+                        </div>
+                        <h3 className="font-semibold mb-2">Verified hardware means real trust</h3>
+                        <p className="text-sm text-foreground/70">
+                            Every item is inspected by certified technicians before reaching the buyer — eliminating scams and removing the fear of purchasing high-value hardware online.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Second row - 3 cards */}
+                <div className="grid md:grid-cols-3 gap-6">
                     <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
                         <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
                             <Zap className="w-5 h-5 text-accent" />
                         </div>
-                        <h3 className="font-semibold mb-2">AI Timing</h3>
-                        <p className="text-sm text-foreground/70">Modern AI enables smart search and matching at scale</p>
+                        <h3 className="font-semibold mb-2">AI guidance makes choices simple</h3>
+                        <p className="text-sm text-foreground/70">
+                            Most users don't understand specs, upgrade options or realistic pricing. AI explains what their device can handle, when upgrades are worthwhile, and how to price old hardware.
+                        </p>
+                    </div>
+
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
+                        <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+                            <Users className="w-5 h-5 text-accent" />
+                        </div>
+                        <h3 className="font-semibold mb-2">SMB vendors need a neutral platform</h3>
+                        <p className="text-sm text-foreground/70">
+                            Shops and refurbishers already handle used hardware — they just lack reach. We give them an ecosystem, not competition.
+                        </p>
+                    </div>
+
+                    <div className="p-6 rounded-lg border border-border bg-card/50 hover:bg-card transition-all duration-300 cursor-pointer hover:scale-110">
+                        <div className="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+                            <Target className="w-5 h-5 text-accent" />
+                        </div>
+                        <h3 className="font-semibold mb-2">No direct competitors in the IT-hardware niche</h3>
+                        <p className="text-sm text-foreground/70">
+                            General classifieds exist, but no EU marketplace focuses specifically on computers and components with verification and intelligent pricing.
+                        </p>
                     </div>
                 </div>
             </section>
