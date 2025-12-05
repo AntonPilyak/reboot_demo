@@ -12,6 +12,7 @@ export default function Home() {
     const [email, setEmail] = useState("")
     const [userType, setUserType] = useState("Investor")
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+    const [message, setMessage] = useState("")
     const [captchaToken, setCaptchaToken] = useState<string | null>(null)
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -34,11 +35,13 @@ export default function Home() {
                 body: JSON.stringify({
                     email: email,
                     type: userType,
+                    message: message,
                 }),
             })
 
             setStatus("success")
             setEmail("")
+            setMessage("")
 
             // Сброс через 3 секунды
             setTimeout(() => setStatus("idle"), 3000)
@@ -415,6 +418,13 @@ export default function Home() {
                                 <option>Hardware Seller/Partner</option>
                                 <option>Other</option>
                             </select>
+                            <textarea
+                                placeholder="Your message (optional)"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                rows={4}
+                                className="w-full px-4 py-2 rounded-md border border-border bg-card text-foreground placeholder:text-foreground/50 text-sm resize-none"
+                            />
                         </div>
                         <div className="flex justify-center">
                             <ReCAPTCHA
@@ -437,7 +447,6 @@ export default function Home() {
                     </form>
                 </div>
             </section>
-
             {/* Footer */}
             <footer className="border-t border-border mt-12">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
