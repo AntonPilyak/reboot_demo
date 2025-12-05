@@ -26,7 +26,7 @@ export default function Home() {
         setStatus("loading")
 
         try {
-            await fetch("https://script.google.com/macros/s/AKfycbwwoTP1-FFDcHFu4-qiJqRMM6JMj9p74M62OhlEOb2bgYnNO4YPhk9yH39UpLKZxnU5/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbyovk5D62vuTs_-0iFuGdfCikHerasOJrQq163ftij8BZbpxTsdgu61ONAONJ-acjNB/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: {
