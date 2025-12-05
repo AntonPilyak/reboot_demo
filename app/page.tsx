@@ -53,12 +53,12 @@ export default function Home() {
             <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
+                        <a href="#demo" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                             <div className="w-8 h-8 rounded bg-accent flex items-center justify-center">
                                 <RotateCw className="w-5 h-5 text-accent-foreground" />
                             </div>
                             <span className="text-lg font-semibold">ReBoot Market</span>
-                        </div>
+                        </a>
 
                         {/* Navigation Links */}
                         <nav className="hidden md:flex items-center gap-6">
@@ -66,7 +66,7 @@ export default function Home() {
                                 Vision
                             </a>
                             <a href="#why-now" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
-                                Why Now
+                                Why It Works
                             </a>
                             <a href="#ai-advisor" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
                                 AI Assistant
@@ -86,7 +86,7 @@ export default function Home() {
                 </div>
             </header>
             {/* Hero Section */}
-            <section id="demo" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 max-w-4xl mx-auto">
+            <section id="demo" className="scroll-mt-20 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 max-w-4xl mx-auto">
                 <div className="text-center space-y-8">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance leading-tight text-foreground">
                         The AI-Powered Marketplace for Pre-Owned Tech
@@ -110,7 +110,7 @@ export default function Home() {
             </section>
 
             {/* Problem/Solution Section */}
-            <section id="vision" className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
+            <section id="vision" className="scroll-mt-20 px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Problem */}
                     <div className="space-y-6">
@@ -176,7 +176,7 @@ export default function Home() {
             </section>
 
             {/* Why It's Going to Work Section */}
-            <section id="why-now" className="px-4 sm:px-6 lg:px-8 py-12 max-w-5xl mx-auto">
+            <section id="why-now" className="scroll-mt-20 px-4 sm:px-6 lg:px-8 py-12 max-w-5xl mx-auto">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl font-bold">Why It's Going to Work</h2>
                 </div>
@@ -248,7 +248,7 @@ export default function Home() {
                 </div>
             </section>
             {/* AI Tech Advisor Section */}
-            <section className="px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
+            <section id="ai-advisor" className="scroll-mt-20 px-4 sm:px-6 lg:px-8 py-12 max-w-4xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Left side - Image */}
                     <div className="flex items-center justify-center">
@@ -336,7 +336,7 @@ export default function Home() {
             </section>
 
             {/* CTA Section */}
-            <section id="contact" className="px-4 sm:px-6 lg:px-8 py-12 max-w-2xl mx-auto">
+            <section id="contact" className="scroll-mt-20 px-4 sm:px-6 lg:px-8 py-12 max-w-2xl mx-auto">
                 <div className="text-center space-y-8">
                     <div>
                         <h2 className="text-3xl font-bold mb-2">Interested in ReBoot Market?</h2>
