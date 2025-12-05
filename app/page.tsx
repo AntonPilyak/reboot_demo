@@ -348,7 +348,7 @@ export default function Home() {
                             Senior systems engineer with strong experience in complex, high-load software. Responsible for architecture, automation and building the platform with a lean, scalable tech stack from the very first prototype.
                         </p>
                         <a
-                            href="https://linkedin.com/in/YOUR_LINKEDIN"
+                            href="https://www.linkedin.com/in/anton-piliak-38369a92/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 text-sm text-accent hover:underline"
